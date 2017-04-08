@@ -1,3 +1,5 @@
+* { font-family: 'Open Sans', sans-serif; }
+
 .color1 { color: #284907; }
 .color2 { color: #5B783E; }
 .color3 { color: #dcdec3; }
@@ -38,22 +40,28 @@ input[type="button"].button-primary:focus {
 .footer {
   line-height: 40px;
   border-top: 1px solid #ccc;
-  margin: 20px 0;
+  margin: 20px 0 0;
   font-size: 10px;
-  text-align: right;
+  text-align: center;
   color: #666;
+}
+
+.footer-icon img {
+  margin: 0 0 40px;
+  height: 90px;
 }
 
 .navbar { margin: 20px 0 10px; padding: 0 20px; text-align: center; }
 .navbar-item { display: inline-block;; }
 .navbar-item a {
+  text-decoration: none;
   transition: background-color 250ms;
   display: block;
-  line-height: 28px;
+  line-height: 32px;
   padding: 0 40px;
-  margin: 10px 20px;
+  margin: 10px 10px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase;
   background-color: #dcdec3;
   color: #284907;
@@ -61,8 +69,82 @@ input[type="button"].button-primary:focus {
 }
 .navbar-item a:hover { background-color: #eee; }
 
-.splash { position: relative; text-align: center; }
-.splash img { display: block; width: 100%; }
-.splash a {
-  margin: 20px;
+.navbar.secondary { margin: 5px; }
+.navbar.secondary .navbar-item a {
+  font-size: 11px;
+  margin: 5px 5px;
+  padding: 0 10px;
+  line-height: 25px;
+  background-color: #85867b;
+  color: white;
+}
+.navbar.secondary .navbar-item.active a { background-color: black; }
+.navbar.secondary .navbar-item a:hover { background-color: black; }
+
+.intro {
+  font-size: 16px;
+  padding: 40px;
+  font-weight: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  z-index: 100;
+}
+
+.splash {
+  overflow: hidden;
+  position: relative; text-align: center;
+  min-height: 200px;
+}
+
+.splash img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  z-index: -100;
+  width: auto;
+}
+
+@media (min-width: 550px) {
+  .intro {
+    font-size: 20px;
+    padding: 70px;
+  }
+}
+
+@media (min-width: 800px) {
+  .intro {
+    padding: 100px 70px;
+  }
+
+  .splash img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro {
+    padding: 200px 120px;
+  }
+}
+
+.products img { float: left; }
+.products table, .products th, .products td {
+  margin-bottom: 0;
+  padding: 0;
+  border: 0;
+}
+
+.product-header {
+  border-bottom: 5px solid #284907;
+  margin: 20px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #284907;
+}
+
+.product-title {
+  margin: 15px 0 0px;
+  text-align: center;
 }

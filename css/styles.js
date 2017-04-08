@@ -6,6 +6,9 @@ const {width, height, scale} = Dimensions.get("window"),
     vmax = Math.max(vw, vh);
 
 export default StyleSheet.create({
+    "*": {
+        "fontFamily": "'Open Sans', sans-serif"
+    },
     "color1": {
         "color": "#284907"
     },
@@ -99,11 +102,18 @@ export default StyleSheet.create({
         "borderTop": "1px solid #ccc",
         "marginTop": 20,
         "marginRight": 0,
-        "marginBottom": 20,
+        "marginBottom": 0,
         "marginLeft": 0,
         "fontSize": 10,
-        "textAlign": "right",
+        "textAlign": "center",
         "color": "#666"
+    },
+    "footer-icon img": {
+        "marginTop": 0,
+        "marginRight": 0,
+        "marginBottom": 40,
+        "marginLeft": 0,
+        "height": 90
     },
     "navbar": {
         "marginTop": 20,
@@ -120,19 +130,20 @@ export default StyleSheet.create({
         "display": "inline-block"
     },
     "navbar-item a": {
+        "textDecoration": "none",
         "transition": "background-color 250ms",
         "display": "block",
-        "lineHeight": 28,
+        "lineHeight": 32,
         "paddingTop": 0,
         "paddingRight": 40,
         "paddingBottom": 0,
         "paddingLeft": 40,
         "marginTop": 10,
-        "marginRight": 20,
+        "marginRight": 10,
         "marginBottom": 10,
-        "marginLeft": 20,
+        "marginLeft": 10,
         "cursor": "pointer",
-        "fontSize": 12,
+        "fontSize": 15,
         "textTransform": "uppercase",
         "backgroundColor": "#dcdec3",
         "color": "#284907",
@@ -141,18 +152,100 @@ export default StyleSheet.create({
     "navbar-item a:hover": {
         "backgroundColor": "#eee"
     },
+    "navbarsecondary": {
+        "marginTop": 5,
+        "marginRight": 5,
+        "marginBottom": 5,
+        "marginLeft": 5
+    },
+    "navbarsecondary navbar-item a": {
+        "fontSize": 11,
+        "marginTop": 5,
+        "marginRight": 5,
+        "marginBottom": 5,
+        "marginLeft": 5,
+        "paddingTop": 0,
+        "paddingRight": 10,
+        "paddingBottom": 0,
+        "paddingLeft": 10,
+        "lineHeight": 25,
+        "backgroundColor": "#85867b",
+        "color": "white"
+    },
+    "navbarsecondary navbar-itemactive a": {
+        "backgroundColor": "black"
+    },
+    "navbarsecondary navbar-item a:hover": {
+        "backgroundColor": "black"
+    },
+    "intro": {
+        "fontSize": 16,
+        "paddingTop": 40,
+        "paddingRight": 40,
+        "paddingBottom": 40,
+        "paddingLeft": 40,
+        "fontWeight": "100",
+        "backgroundColor": "rgba(0, 0, 0, 0.5)",
+        "color": "white",
+        "textAlign": "center",
+        "zIndex": 100
+    },
     "splash": {
+        "overflow": "hidden",
         "position": "relative",
-        "textAlign": "center"
+        "textAlign": "center",
+        "minHeight": 200
     },
     "splash img": {
+        "position": "absolute",
+        "left": 0,
+        "top": 0,
         "display": "block",
-        "width": "100%"
+        "zIndex": -100,
+        "width": "auto"
     },
-    "splash a": {
+    "products img": {
+        "float": "left"
+    },
+    "products table": {
+        "marginBottom": 0,
+        "paddingTop": 0,
+        "paddingRight": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "border": 0
+    },
+    "products th": {
+        "marginBottom": 0,
+        "paddingTop": 0,
+        "paddingRight": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "border": 0
+    },
+    "products td": {
+        "marginBottom": 0,
+        "paddingTop": 0,
+        "paddingRight": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "border": 0
+    },
+    "product-header": {
+        "borderBottom": "5px solid #284907",
         "marginTop": 20,
-        "marginRight": 20,
+        "marginRight": 0,
         "marginBottom": 20,
-        "marginLeft": 20
+        "marginLeft": 0,
+        "fontWeight": "bold",
+        "textTransform": "uppercase",
+        "color": "#284907"
+    },
+    "product-title": {
+        "marginTop": 15,
+        "marginRight": 0,
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "textAlign": "center"
     }
 });
