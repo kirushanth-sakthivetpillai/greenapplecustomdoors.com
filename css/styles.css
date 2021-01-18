@@ -202,3 +202,52 @@ input[type="button"].button-primary:focus {
   font-weight: normal;
   display: none;
 }
+
+.instagram {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram .text {
+  line-height: 37px;
+  font-style: italic;
+  text-transform: lowercase;
+  color: gray;
+  font-size: 19px;
+}
+
+.instagram .icon {
+  text-decoration:none;
+  display: flex;
+  border:0;
+  height:37px;
+  padding:4px 8px;
+  color:#ffffff;
+}
+
+.instagram .icon-text {
+  display: flex;
+  line-height: 37px;
+  font-size: 16px;
+  padding: 0 7px;
+  text-transform: lowercase;
+  color: white;
+}
+
+.instagram .icon-text i {
+  font-size: 22px;
+  font-style: normal;
+  padding-left: 10px;
+  line-height: 30px;
+}
+
+.instagram .icon-inner {
+  width:37px;
+}
+
+.instagram .bg {
+  background: #91acca;
+  border-radius:30px;
+}
